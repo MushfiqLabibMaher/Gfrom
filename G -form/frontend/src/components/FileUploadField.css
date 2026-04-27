@@ -1,0 +1,129 @@
+.file-upload-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.file-upload-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #4a5568;
+  margin-bottom: 0.35rem;
+}
+
+.file-size-hint {
+  font-weight: 400;
+  color: #a0aec0;
+  font-size: 0.8rem;
+}
+
+/* Drop zone */
+.drop-zone {
+  border: 2px dashed #cbd5e0;
+  border-radius: 8px;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  background: #f7fafc;
+}
+
+.drop-zone:hover,
+.drop-zone:focus {
+  border-color: #3182ce;
+  background: #ebf8ff;
+  outline: none;
+}
+
+.drop-zone.drag-over {
+  border-color: #3182ce;
+  background: #bee3f8;
+}
+
+.drop-icon { font-size: 2rem; }
+
+.drop-text {
+  font-size: 0.9rem;
+  color: #4a5568;
+}
+
+.drop-link {
+  color: #3182ce;
+  text-decoration: underline;
+}
+
+.drop-hint {
+  font-size: 0.75rem;
+  color: #a0aec0;
+}
+
+/* Preview */
+.file-preview {
+  border: 1.5px solid #c6f6d5;
+  border-radius: 8px;
+  padding: 0.75rem;
+  background: #f0fff4;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.photo-preview {
+  width: 100%;
+  max-height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.video-placeholder {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  background: #e2e8f0;
+  border-radius: 6px;
+  padding: 0.75rem;
+}
+
+.video-name {
+  font-size: 0.85rem;
+  color: #4a5568;
+  word-break: break-all;
+}
+
+.file-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  align-items: center;
+  font-size: 0.8rem;
+  color: #4a5568;
+}
+
+.file-name { font-weight: 600; word-break: break-all; }
+.file-size { color: #718096; }
+.file-verified { color: #276749; font-weight: 600; }
+
+.remove-btn {
+  background: none;
+  border: 1px solid #fc8181;
+  color: #c53030;
+  border-radius: 5px;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.8rem;
+  align-self: flex-start;
+  transition: background 0.15s;
+}
+
+.remove-btn:hover { background: #fff5f5; }
+
+.hidden-input { display: none; }
+
+.field-error {
+  color: #e53e3e;
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+}
